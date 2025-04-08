@@ -1,0 +1,12 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  redeploy_everything:
+    name: Deploying everything to the staging environment
+    steps:
+      - name: SSH to the staging server
